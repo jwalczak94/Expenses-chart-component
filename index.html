@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Frontend Mentor | Expenses chart component</title>
+  </head>
+  <body>
+    <main>
+      <h1 class="sr-only">Hi, on this page you can check your spending from the last 7 days</h1>
+
+      <div class="card-component">
+        <div class="balance-section">
+          <div class="balance-amount">
+            <h2 class="text-s">My balance</h2>
+            <span class="text-m text-bold">$921.48</span>
+          </div>
+          <svg
+            width="72"
+            height="48"
+            viewBox="0 0 72 48"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            class="logo">
+            <g fill="none" fill-rule="evenodd">
+              <circle fill="#382314" cx="48" cy="24" r="24" />
+              <circle stroke="#FFF" stroke-width="2" cx="24" cy="24" r="23" />
+            </g>
+          </svg>
+        </div>
+
+        <div class="charts-section">
+          <h2 class="text-m text-bold">Spending - Last 7 days</h2>
+
+          <!-- CHART FROM JS /JSON FILE -->
+          <div class="charts"></div>
+
+          <div class="results">
+            <h3 class="text-s text-light">Total this month</h3>
+            <span class="text-l text-bold">$478.33</span>
+            <span class="text-s text-bold">+2.4%</span>
+            <span class="text-s text-light">from last month</span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="./charts.js"></script>
+  </body>
+</html>
